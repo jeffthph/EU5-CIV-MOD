@@ -1,0 +1,3 @@
+colors = {
+	map_barbarian = rgb {125 9 9}
+}

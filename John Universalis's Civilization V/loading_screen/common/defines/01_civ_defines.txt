@@ -1,0 +1,4 @@
+﻿
+NAI = {
+	AI_BASE_COLONY_UTILITY = 30 # AI base desire to create colonial charters
+}

@@ -1,0 +1,71 @@
+setup_is_civ = {
+	game_data = {
+		category = country
+	}
+	is_civ = yes
+	cannot_move_capital = yes
+	expel_tribals = yes
+	global_migration_speed_modifier = 0.5
+}
+
+setup_is_city_state = {
+	game_data = {
+		category = country
+	}
+	is_city_state = yes
+	can_colonize = no
+	cannot_move_capital = yes
+	cannot_declare_no_cb_wars = yes
+	war_declaration_stab_hit_tolerance = -1000
+	war_declaration_war_exhaustion_tolerance = -1000
+	
+}
+
+setup_is_cultural = {
+	game_data = {
+		category = country
+	}
+	is_cultural_cs = yes
+}
+
+setup_is_industrial = {
+	game_data = {
+		category = country
+	}
+	is_industrial_cs = yes
+}
+
+setup_is_militaristic = {
+	game_data = {
+		category = country
+	}
+	is_militaristic = yes
+}
+
+setup_is_religious = {
+	game_data = {
+		category = country
+	}
+	is_religious = yes
+}
+
+setup_is_scientific = {
+	game_data = {
+		category = country
+	}
+	is_scientific = yes
+}
+
+setup_is_trade = {
+	game_data = {
+		category = country
+	}
+	is_trade_cs = yes
+}
+
+setup_is_maritime = {
+	game_data = {
+		category = country
+	}
+	is_maritime_cs = yes
+}

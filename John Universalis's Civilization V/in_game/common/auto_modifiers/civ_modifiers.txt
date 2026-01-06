@@ -1,0 +1,14 @@
+
+civ_modifiers = {
+	requires_real = no
+	
+	#global_peasants_assimilation_blocked = yes
+	global_tribesmen_assimilation_blocked  = yes  
+	#global_peasants_conversion_blocked = yes
+	global_tribesmen_conversion_blocked  = yes
+	#global_peasants_migration_allowed = yes
+	block_tribal_promotion = yes
+	global_tribesmen_migration_allowed  = yes
+	#expel_tribals = yes
+
+}

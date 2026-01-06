@@ -1,0 +1,31 @@
+monthly_country_pulse = {
+	on_actions = {
+	civ_on_good_capital_changes
+	}
+}
+
+civ_on_good_capital_changes = {
+	trigger = {
+			any_controlled_location = {
+					has_building = building_type:civ_palace
+					is_capital = no
+					
+				}
+			any_controlled_location = {
+					not = {has_building = building_type:civ_palace}
+					is_capital = yes
+					
+				}
+			}
+	effect = {
+			random_controlled_location = {
+				limit = {
+					has_building = building_type:civ_palace
+					is_capital = no
+					}
+				save_scope_as = capital_location
+			}
+		set_capital = scope:capital_location
+		
+	}
+}

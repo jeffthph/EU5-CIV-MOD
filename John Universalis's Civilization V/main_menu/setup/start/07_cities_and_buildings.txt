@@ -1,0 +1,9 @@
+locations = {
+	
+}
+
+building_manager = {
+
+
+}
+

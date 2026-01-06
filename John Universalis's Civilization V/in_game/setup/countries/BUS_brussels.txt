@@ -1,0 +1,7 @@
+BUS = {
+	color = map_BRB
+	color2 = rgb { 118 193 153 }
+
+	culture_definition = low_franconian
+	religion_definition = catholic
+}

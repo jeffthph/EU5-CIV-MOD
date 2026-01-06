@@ -1,0 +1,5 @@
+colonial_charter_maintenance = {
+	tools = 0.25
+	medicaments = 0.1
+	category = special_demands
+}

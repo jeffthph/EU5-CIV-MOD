@@ -1,0 +1,13 @@
+barbarian_culture = {  
+	language = barbarian_language
+	
+	color = map_barbarian
+	
+	tags = { native_american_tag north_american_gfx american_gfx }
+	
+	opinions = {
+	}
+	culture_groups = {
+		barbarian_group
+	}
+}

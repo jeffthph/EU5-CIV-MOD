@@ -1,0 +1,323 @@
+civ_palace = {  #denotes a civ
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = large_noble_employment
+	
+	expensive = yes
+	build_time = large_capital_build_time
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	capital_modifier = {
+		local_crown_estate_power = 0.25
+		local_monthly_food = 40
+		local_population_growth = 0.02
+		local_garrison_size = 0.25
+		local_unrest = -0.05
+		local_nobles_estate_power = 1.0
+		fort_level = 2
+		propagating_zone_of_control = yes
+	}
+	
+	capital_country_modifier = {
+
+		monthly_gold_income = 10
+
+	}
+	
+	unique_production_methods = {
+		civ_palace_maintenance = {
+			stone = 0.01
+			no_upkeep = yes			
+			category = building_maintenance
+		}
+	}
+	
+	modifier = {
+		monthly_gold_income = 10
+	}
+
+	graphical_tags = { palace }
+
+	construction_demand = early_capital_building_construction
+	
+	on_destroyed = { #Don't know if this works, but they were being destroyed somehow despite being indestructible and I haven't noticed it since
+		construct_building = {
+			building_type = civ_palace
+			cost_multiplier = 0
+			demand_multiplier = 0
+			instant = yes
+		}
+	}
+}
+
+civ_city_state = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = large_noble_employment
+	
+	town = yes
+	city = yes
+	
+	expensive = yes
+	build_time = large_capital_build_time
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	capital_modifier = {
+		local_crown_estate_power = 0.25
+		local_monthly_food = 130
+		local_population_growth = 0.1
+		local_garrison_size = 4.0
+		local_unrest = -0.05
+		fort_level = 6
+		propagating_zone_of_control = yes
+	}
+	
+	capital_country_modifier = {
+		local_merchant_power = 10
+		local_trades_per_burgher = 2
+		merchant_capacity_from_building = 10		
+	}
+	modifier = {
+		monthly_gold_income = 10
+	}
+	
+	
+	
+	unique_production_methods = {
+		civ_palace_maintenance = {
+			stone = 0.01
+			no_upkeep = yes			
+			category = building_maintenance
+		}
+	}
+
+	graphical_tags = { palace }
+
+	construction_demand = early_capital_building_construction
+}
+#####The following all give some production of some basic resources needed to colonise
+civ_stone = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = government_category #ensures that this gets the stone before other buildings, otherwise would not function right
+	employment_size = workshop_employment
+	town = yes
+	city = yes
+	
+		location_potential = {
+		is_capital = yes
+	}
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	build_time = guild_build_time
+	unique_production_methods = {
+		civ_stone_maintenance = {
+			stone = 0.01
+			produced = stone
+			output = 1
+			category = guild_input
+			no_upkeep = yes
+		}
+	}
+	construction_demand = guild_construction
+	modifier = {}
+}
+
+civ_weapons = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = basic_industry_category
+	employment_size = workshop_employment
+	town = yes
+	city = yes
+	
+		location_potential = {
+		is_capital = yes
+	}
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	build_time = guild_build_time
+	unique_production_methods = {
+		civ_guns_maintenance = {
+			stone = 0.01
+			produced = weaponry
+			output = 2.05
+			category = guild_input
+			no_upkeep = yes
+		}
+	}
+	construction_demand = guild_construction
+	modifier = {}
+}
+
+civ_tools = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = basic_industry_category
+	employment_size = workshop_employment
+	town = yes
+	city = yes
+	
+		location_potential = {
+		is_capital = yes
+	}
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	build_time = guild_build_time
+	unique_production_methods = {
+		civ_tools_maintenance = {
+			produced = tools
+			stone = 0.01
+			output = 2
+			category = guild_input
+			no_upkeep = yes
+		}
+	}
+	construction_demand = guild_construction
+	modifier = {}
+}
+civ_meds = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = basic_industry_category
+	employment_size = workshop_employment
+	town = yes
+	city = yes
+	
+		location_potential = {
+		is_capital = yes
+	}
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	build_time = guild_build_time
+	unique_production_methods = {
+		civ_meds_maintenance = {
+			produced = medicaments
+			output = 1.05
+			stone = 0.01
+			category = guild_input
+			no_upkeep = yes
+		}
+	}
+	construction_demand = guild_construction
+	modifier = {}
+}
+civ_salt = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = basic_industry_category
+	employment_size = workshop_employment
+	town = yes
+	city = yes
+	
+		location_potential = {
+		is_capital = yes
+	}
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	build_time = guild_build_time
+	unique_production_methods = {
+		civ_salt_maintenance = {
+			produced = salt
+			output = 1.05
+			stone = 0.01
+			category = guild_input
+			no_upkeep = yes
+		}
+	}
+	construction_demand = guild_construction
+	modifier = {}
+}
+civ_cloth = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = basic_industry_category
+	employment_size = workshop_employment
+	town = yes
+	city = yes
+	
+		location_potential = {
+		is_capital = yes
+	}
+
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	is_indestructible = yes
+	
+	build_time = guild_build_time
+	unique_production_methods = {
+		civ_cloth_maintenance = {
+			stone = 0.01
+			produced = cloth
+			output = 1.05
+			category = guild_input
+			no_upkeep = yes
+		}
+	}
+	construction_demand = guild_construction
+	modifier = {}
+}
+

@@ -1,0 +1,135 @@
+on_game_start = {
+	effect = {
+	every_country = {
+	save_scope_as = target_country
+			capital = {
+					add_pop = {
+						culture = scope:target_country.culture
+						religion = scope:target_country.religion
+						type = pop_type:nobles
+						size = {
+							add = 1
+						}
+					}
+					add_pop = {
+						culture = scope:target_country.culture
+						religion = scope:target_country.religion
+						type = pop_type:clergy
+						size = {
+							add = 1
+						}
+					}
+					add_pop = {
+						culture = scope:target_country.culture
+						religion = scope:target_country.religion
+						type = pop_type:burghers
+						size = {
+							add = 8
+						}
+					}
+					add_pop = {
+						culture = scope:target_country.culture
+						religion = scope:target_country.religion
+						type = pop_type:peasants
+						size = {
+							add = 90
+						}
+					}
+					every_pop = {
+						limit = {
+							culture = culture:barbarian_culture
+							religion = religion:barbarian_religion
+						}
+						add_pop_size = {
+							value = pop_size
+							multiply = -1
+						}
+					}
+					construct_building = {
+					building_type = building_type:civ_stone
+					instant = yes
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+					}
+
+				}
+			}
+			
+			###Civ setup
+			
+			every_country = {
+				limit = { 
+				modifier:is_civ = yes	
+				}
+				save_scope_as = target_country
+				capital = {
+					change_location_rank = location_rank:town
+					
+					construct_building = {
+						building_type = building_type:civ_palace
+						instant = yes
+						cost_multiplier = 0
+						cost_multiplier_reason = "game_concept_event"
+					}
+					
+					construct_building = {
+					building_type = building_type:civ_tools
+					instant = yes
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+					}
+					
+					construct_building = {
+					building_type = building_type:civ_meds
+					instant = yes
+					cost_multiplier = 0
+					cost_multiplier_reason = "game_concept_event"
+					}
+					
+					save_scope_as = target_location	
+				}
+			}
+			
+
+			
+			###City state setups
+			#All city states
+			
+			every_country = {
+				limit = { 
+				modifier:is_city_state = yes	
+				}
+				save_scope_as = target_country
+				capital = {
+					change_location_rank = location_rank:city
+					construct_building = {
+						building_type = building_type:civ_city_state
+						instant = yes
+						cost_multiplier = 0
+						cost_multiplier_reason = "game_concept_event"
+					}
+					save_scope_as = target_location
+				}
+			}
+
+			#Industrial
+			every_country = {
+				limit = { 
+				modifier:is_industrial_cs = yes	
+				}
+				save_scope_as = target_country
+				capital = {
+					change_location_rank = location_rank:city
+					construct_building = {
+						building_type = building_type:construction_center
+						instant = yes
+						cost_multiplier = 0
+						cost_multiplier_reason = "game_concept_event"
+					}
+					save_scope_as = target_location
+				}
+			}
+
+		}
+
+}

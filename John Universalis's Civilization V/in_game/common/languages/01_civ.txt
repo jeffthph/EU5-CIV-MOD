@@ -1,0 +1,18 @@
+barbarian_language = {
+
+	color = map_barbarian
+
+	male_names = {
+		barbar barbarbar bar barbarbarbar berbarbarber greg grog grug krank louis frank chuck plan rock brick stick     
+	}
+	female_names = {
+		barbarina barbarbarina barette barbarbarbarlette berbarbarberiko gregetha grogetha grug kranklin louise frank chuck plan rock brick stick
+	}
+	dynasty_names = {
+		de_barb al_barb von_barb van_barb del_barbo smith
+	}
+	lowborn = {
+		barb
+	}
+
+}

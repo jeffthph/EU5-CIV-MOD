@@ -1,0 +1,8 @@
+﻿folk_barbarian_group = {
+	color = map_barbarian
+	convert_slaves_at_start = no
+	modifier = {
+		allow_rgo_slave_demand = yes
+	}
+
+}
