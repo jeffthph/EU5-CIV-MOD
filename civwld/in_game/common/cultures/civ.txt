@@ -1,0 +1,28 @@
+barbarian_culture = {  
+	language = barbarian_language
+	
+	color = rgb { 0 0 0 }
+	
+	tags = { native_american_tag north_american_gfx american_gfx }
+	
+	opinions = {
+	}
+	culture_groups = {
+		barbarian_group
+	}
+}
+
+celtic = {
+	language = breton_dialect
+	
+	color = rgb { 38 111 82 }
+	
+	tags = { cornish_gfx welsh_gfx celtic_gfx british_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		celtic_group
+	}
+	
+	opinions = {
+	}
+}

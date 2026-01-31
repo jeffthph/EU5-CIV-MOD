@@ -1,0 +1,24 @@
+﻿
+barbarian_religion = { #mostly just copied a base game religion
+	color = map_barbarian
+	group = folk_barbarian_group
+
+	religious_aspects = 1
+	
+	culture_locked = yes
+	
+	definition_modifier = {
+		global_burghers_estate_power = -0.2
+		prestige_from_land_battle = 0.1
+		land_morale_modifier = -0.1
+		global_hostile_attrition = 1
+	}
+	
+    opinions = { #All religions would be enemy of the barbarian religion
+		barbarian_religion = enemy
+    }
+
+	tags = { pagan_gfx }
+}
+
+

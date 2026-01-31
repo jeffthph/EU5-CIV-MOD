@@ -1,0 +1,41 @@
+﻿civ_capital = {
+	civ_stone = 1
+	civ_palace = 1
+	civ_weapons = 1
+	civ_tools = 1
+	civ_meds = 1
+	civ_salt = 1
+	civ_cloth = 1
+	temple = 1
+	tools_guild = 1
+	brewery = 1
+	weapon_guild = 1
+	paper_guild = 1
+	granary = 2
+	stockade = 1
+	mason = 2
+	pottery_guild = 2
+	civ_war_camp = 1
+}
+
+civ_city_state = {
+	civ_stone = 1
+	civ_city_state = 1
+	civ_weapons = 1
+	civ_tools = 1
+	civ_meds = 1
+	civ_salt = 1
+	civ_cloth = 1
+	temple = 1
+	tools_guild = 1
+	distillers_guild = 1
+	fine_cloth_guild = 1
+	brewery = 1
+	weapon_guild = 1
+	paper_guild = 1
+	granary = 2
+	stockade = 1
+	mason = 2
+	pottery_guild = 2
+	civ_war_camp = 1
+}

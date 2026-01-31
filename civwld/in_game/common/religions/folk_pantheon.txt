@@ -1,0 +1,20 @@
+﻿
+
+pantheon = { #representation of pre-religion pantheons
+    color = map_greek
+    group = folk_pantheon_group
+
+	religious_aspects = 1
+    definition_modifier = {
+        army_infantry_power = 0.05
+        skill_of_new_artists = 0.1
+    }
+    
+    opinions = {
+		barbarian_religion = enemy
+    }
+
+	tags = {
+		folk_european_gfx pagan_gfx
+	}
+}

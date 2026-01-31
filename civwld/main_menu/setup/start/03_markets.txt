@@ -1,0 +1,14 @@
+market_manager = {
+	#europe
+	add_market = nidaros
+	add_market = stockholm
+	add_market = kobenhavn
+	add_market = neva
+	add_market = berlin
+	add_market = london
+	add_market = birmingham
+	add_market = stirling
+	add_market = dublin
+	# asia
+	add_market = karakorum
+}

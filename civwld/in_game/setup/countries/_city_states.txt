@@ -1,0 +1,17 @@
+﻿BSS = { #Brussels
+
+	color = rgb { 13 13 13 }
+	color2 = rgb { 255 129 18 }
+
+	culture_definition = low_franconian
+	religion_definition = pantheon
+}
+
+AMGH = { #Armagh
+
+	color = rgb { 13 13 13 }
+	color2 = rgb { 255 255 255 }
+
+	culture_definition = irish
+	religion_definition = pantheon
+}

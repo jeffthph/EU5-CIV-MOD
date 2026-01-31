@@ -1,0 +1,114 @@
+﻿ ## EUROPE
+SWE = { #Sweden
+
+	color = rgb { 52 81 172 }
+	color2 = rgb { 250 248 3 }
+	
+
+	culture_definition = swedish
+	religion_definition = pantheon
+	
+}
+
+DAN = { #Denmark
+
+	color = rgb { 108 43 21 }
+	color2 = rgb { 240 231 180 }
+
+	culture_definition = danish
+	religion_definition = pantheon
+	
+}
+
+NOR = { #Norway
+
+	color = rgb { 42 51 128 }
+	color2 = rgb { 234 45 25 }
+
+	culture_definition = norwegian
+	religion_definition = pantheon
+	
+}
+
+ENG = { #England
+
+	color = rgb { 109 2 0 }
+	color2 = rgb { 255 255 255 }
+
+	culture_definition = english
+	religion_definition = pantheon
+	
+}
+
+GBR = { #Great Britain
+
+	color = rgb { 217 47 48 }
+	color2 = rgb { 255 255 255 }
+
+	culture_definition = english
+	religion_definition = pantheon
+	
+}
+
+SCO = { #Scotland
+
+	color = rgb { 0 64 192 }
+	color2 = rgb { 255 255 255 }
+
+	culture_definition = scottish
+	religion_definition = pantheon
+	
+}
+
+CEL = { #Celts
+
+	color = rgb { 26 109 75 }
+	color2 = rgb { 149 171 255 }
+
+	culture_definition = celtic
+	religion_definition = pantheon
+	
+}
+
+FRA = { #France
+
+	color = rgb { 76 161 254 }
+	color2 = rgb { 235 235 140 }
+
+	culture_definition = francien
+	religion_definition = pantheon
+	
+}
+
+AQT = { #Aquitaine
+
+	color = rgb { 229 117 116 }
+	color2 = rgb { 234 225 157 }
+
+	culture_definition = occitan
+	religion_definition = pantheon
+	
+}
+
+GLS = { #Gauls
+
+	color = rgb { 38 111 82 }
+	color2 = rgb { 92 239 227 }
+
+	culture_definition = celtic
+	religion_definition = pantheon
+	
+}
+
+	## ASIA
+
+MGE = { #Mongolia
+
+	color = rgb { 81 0 9 }
+	color2 = rgb { 255 122 0 }
+
+	culture_definition = mongolian_culture
+	religion_definition = pantheon
+	
+}
+

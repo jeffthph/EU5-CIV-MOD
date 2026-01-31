@@ -1,0 +1,115 @@
+﻿historical_characters_accessories = {
+
+	usage = game
+	selection_behavior = max
+	priority = 99
+	
+	# Special modifiers
+
+	## Prevents 16y.o. historical characters to have a beard because of "priority = 2"
+	revert_beard = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = no_beard
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+
+			modifier = {
+				add = 1000
+				OR = {
+					owner ?= { modifier:no_beards = yes }
+					age_in_years < 18
+				}
+				# no need for more triggers as all modifiers are targeting specific characters
+			}
+		}
+	}
+
+	# Characters below
+
+	
+
+	civ_harald_bluetooth = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = hair_styles
+				template = german_hair
+				accessory = male_north_german_hair_crown_short
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = european_beards
+				accessory = beard_german_long_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				exists = this
+				exists = character:civ_harald_bluetooth
+				this = character:civ_harald_bluetooth
+			}
+		}
+	}
+
+	civ_harald_hardrada = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = hair_styles
+				template = german_hair
+				accessory = male_north_german_hair_crown_long
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = european_beards
+				accessory = beard_german_long_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				exists = this
+				exists = character:civ_harald_hardrada
+				this = character:civ_harald_hardrada
+			}
+		}
+	}
+
+	civ_gustavus_adolfus = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = hair_styles
+				template = german_hair
+				accessory = male_north_german_hair_short_straight_pomp
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = european_beards
+				accessory = beard_german_handlebar_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 500
+				exists = this
+				exists = character:civ_gustavus_adolfus
+				this = character:civ_gustavus_adolfus
+			}
+		}
+	}
+	
+}

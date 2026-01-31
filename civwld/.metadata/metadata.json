@@ -1,0 +1,13 @@
+﻿{
+	"name":	"civ wld",
+	"id":	"civwld",
+	"version":	"0.1",
+	"supported_game_version":	"1.0.10",
+	"short_description":	"so you like civ, huh?",
+	"tags":	["Alternative history", "Gameplay"],
+	"relationships":	[],
+	"picture": "thumbnail.png",
+	"game_custom_data":	{
+		
+}
+}

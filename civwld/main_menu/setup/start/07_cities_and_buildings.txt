@@ -1,0 +1,10 @@
+locations={
+	
+	stockholm = { rank = town town_setup = civ_capital }
+	nidaros = { rank = town town_setup = civ_capital }
+	kobenhavn = { rank = town town_setup = civ_capital }
+	
+	
+	brussels = { rank = town town_setup = civ_city_state }
+	
+}

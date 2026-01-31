@@ -1,0 +1,92 @@
+@ratio = 1.5 # how wide the flags are compared to their height
+@height = 512 
+@width =  @[height*ratio]
+
+@five_sixths = @[5/6]
+@three_quarters = @[3/4]
+@two_thirds = @[2/3]
+@half = @[1/2]
+@third = @[1/3]
+@quarter = @[1/4]
+@sixth = @[1/6]
+
+@semy = 0.27
+
+@canton_scale_cross_x = @[ ( 333 / 768 ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / 512 ) + 0.001 ]
+
+
+DUMMY = {
+	pattern = "pattern_diagonal_split_01.dds"
+	color1 = "red"
+	color2 = "black"
+}
+MER = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+	color3 = "white"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_laurel_wreath.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }			
+	}	
+	colored_emblem = {
+		texture = "ce_sword_in_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.52 } scale = { 0.95 -0.95 } }			
+	}			
+}
+PIR = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_deaths_head_skull_half.dds"
+		color1 = color2
+		color2 = color2
+			instance = { position = { 0.5 0.35 } scale = { 0.725 0.725 } }	
+	}	
+	colored_emblem = {
+		texture = "ce_deaths_head_crossed_bones.dds"
+		color1 = color2
+		color2 = color2
+			instance = { position = { 0.5 0.70 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+SWE = { # Sweden
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 52 81 172 }
+
+	colored_emblem = {
+		texture = "ce_sweden.dds"
+		color1 = rgb { 250 248 3 }		
+	}
+}
+
+DAN = { # Denmark
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 108 43 21 }
+
+	colored_emblem = {
+		texture = "ce_denmark.dds"
+		color1 = rgb { 240 231 180 }	
+	}
+}
+
+NOR = { # Norway
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 42 51 128 }
+
+	colored_emblem = {
+		texture = "ce_norway.dds"
+		color1 = rgb { 234 45 25 }
+	}
+}
+

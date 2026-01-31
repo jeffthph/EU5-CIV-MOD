@@ -1,0 +1,447 @@
+current_age = age_1_traditions
+
+# own_control_core
+# own_control_integrated
+# own_control_conquered
+# own_control_colony
+# own_core
+# own_conquered
+# own_integrated
+# own_colony
+# control_core
+# control
+# our_cores_conquered_by_others
+
+countries = {
+	countries = {
+	### CIVS
+		## EUROPE
+		SWE = { #Sweden
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+
+				stockholm norrtalje enkoping uppsala sodertalje
+			}
+
+			capital = stockholm
+			
+			country_rank = rank_county
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+
+				ruler = civ_gustavus_adolfus
+				
+				ruler_term = { character = civ_gustavus_adolfus start_date = 1.1.1 regnal_number = 2 }
+
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = -10
+
+
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				sodermanland_province vastmanland_province uppland_province swedish_coastline
+			}
+			discovered_areas = {
+				svealand_area
+			}
+
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+
+		DAN = { #Denamrk
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+				roskilde ringsted helsingor kobenhavn
+			}
+
+			capital = kobenhavn
+
+			country_rank = rank_county
+
+			government = {
+			
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				ruler = civ_harald_bluetooth
+				ruler_term = { character = civ_harald_bluetooth start_date = 1.1.1 regnal_number = 1 }
+				
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = 50
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				zealand_province malmohus_province funen_province danish_sea 
+			}
+			discovered_areas = {
+				denmark_area
+			}
+			
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+			
+		}
+
+		NOR = { #Norway
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+				nidaros stjordal skaun storen levanger orland
+			}
+			
+			capital = nidaros
+
+			country_rank = rank_county
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				ruler = civ_harald_hardrada
+				
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = 70
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				sor_trondelag_province nor_trondelag_province nordland_coast_province
+			}
+			discovered_areas = {
+				nord_norge_area
+			}
+			
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+
+		GBR = { #Great britain
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+				london harrow kingston barking
+			}
+			
+			capital = london
+
+			country_rank = rank_county
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				ruler = random
+				
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = 70
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				middlesex_province essex_province hertfordshire_province buckingham_province berkshire_province surrey_province kent_province mercia_coastal_sea_zones_province
+			}
+			discovered_areas = {
+				home_counties_area
+			}
+			
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+
+		ENG = { #England
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+				birmingham coventry stratford leicester bosworth tamworth stafford kidderminster
+			}
+			
+			capital = birmingham
+
+			country_rank = rank_county
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				ruler = random
+				
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = 70
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				warwickshire_province worcestershire_province staffordshire_province leicestershire_province
+			}
+			discovered_areas = {
+				midlands_area
+			}
+			
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+
+		SCO = { #Scotland
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+				stirling strathearn clackmannan dunfermline linlithgow glasgow dumbarton 
+			}
+			
+			capital = stirling
+
+			country_rank = rank_county
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				ruler = random
+				
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = 70
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				lothian_province strathclyde_province perthshire_province fife_province
+			}
+			discovered_areas = {
+				scottish_lowlands_area
+			}
+			
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+
+		CEL = { #Celts
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+				dublin fingal navan naas glendalough wicklow
+			}
+			
+			capital = dublin
+
+			country_rank = rank_county
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				ruler = random
+				
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = 70
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				dublin_province kildare_province meath_province irish_sea_coastal_sea_zones_province wexford_province oriel_province
+			}
+			discovered_areas = {
+				leinster_area
+			}
+			
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+		
+		## ASIA
+
+		MGE = { #Mongolia
+			timed_modifier = {
+						modifier = "setup_is_civ"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			own_control_core = {
+				karakorum tsetserleg khar_balgas kharuukh ongiin_khiid shaazan_khot suriig
+			}
+			
+			capital = karakorum
+
+			country_rank = rank_county
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				
+				ruler = civ_genghis_khan
+				
+				laws = {
+					marriage_law = monogamous_marriage
+				}
+				land_vs_naval = -100
+			}
+
+			starting_technology_level = 2
+			
+			discovered_provinces = {
+				orkhon_province tuul_province ongiin_province 
+			}
+			discovered_areas = {
+				upper_selenga_area western_gobi_area 
+			}
+			
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+			
+			
+	### CITY STATES
+		## EUROPE
+		BSS = { #Brussels #Ind
+			timed_modifier = {
+						modifier = "setup_is_city_state"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			timed_modifier = {
+						modifier = "setup_is_industrial"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+					
+			own_control_core = {
+				brussels
+			}
+			
+			capital = brussels
+			country_rank = rank_county
+
+			starting_technology_level = 2
+			government = {
+				type = republic
+				ruler = random
+
+				land_vs_naval = -20
+			}
+
+			tolerated_cultures = {
+				walloon
+			}
+			discovered_provinces = {
+				brabant_province
+			}
+			discovered_areas = {
+				brabant_area
+			}
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+		
+		AMGH = { #Armagh #Rel
+			timed_modifier = {
+						modifier = "setup_is_city_state"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+			timed_modifier = {
+						modifier = "setup_is_religious"
+						start_date = 1.1.1
+						date = 9999.1.1
+						size = 1
+			}
+					
+			own_control_core = {
+				armagh
+			}
+			
+			capital = brussels
+			country_rank = rank_county
+
+			starting_technology_level = 2
+			government = {
+				type = republic
+				ruler = random
+
+				land_vs_naval = -20
+			}
+			
+			discovered_provinces = {
+				oriel_province
+			}
+			discovered_areas = {
+				ulster_area
+			}
+			currency_data = {
+				gold = 1000
+				government_power = 100
+			}
+		}
+
+	}
+}

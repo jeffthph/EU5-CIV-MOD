@@ -1,0 +1,101 @@
+#Remember to write sons and daughters ALWAYS after their parents to avoid crashes
+
+character_db = {
+
+## EUROPE
+
+	civ_harald_bluetooth = { #Harald Bluetooth
+		first_name = { name = name_harold }
+		nickname = { name = nick_bluetooth }
+		culture = danish
+		religion = pantheon
+		birth_date = 60.1.1
+		birth = kobenhavn
+		dynasty = civ_canute_dynasty
+		adm = 100 dip = 100 mil = 100
+		ruler_trait = bold_fighter
+		tag = DAN
+		timed_modifier = { # Immortality
+			modifier = "leader_immortal"
+			start_date = 1337.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	
+	civ_gustavus_adolfus = { #Gustavus II Adolfus
+		first_name = { name = name_gustav }
+		nickname = { name = "nick_the_great" }
+		culture = swedish
+		religion = pantheon
+		birth_date = 60.12.9
+		birth = stockholm
+		dynasty = civ_vasa_dynasty
+		adm = 100 dip = 100 mil = 100
+		tag = SWE
+		timed_modifier = { # Immortality
+			modifier = "leader_immortal"
+			start_date = 1337.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	
+	civ_kristina = { #Kristina
+		first_name = { name = name_christine }
+		female = yes
+		culture = swedish
+		religion = pantheon
+		birth_date = 80.12.18
+		father = civ_gustavus_adolfus
+		birth = stockholm
+		dynasty = civ_vasa_dynasty
+		adm = 100 dip = 50 mil = 0
+		ruler_trait = erudite
+		tag = SWE
+		timed_modifier = { # Immortality
+			modifier = "leader_immortal"
+			start_date = 1337.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	
+	civ_harald_hardrada = { #Harald Hardrada
+		first_name = { name = name_harold }
+		nickname = { name = nick_hardrada }
+		culture = norwegian
+		religion = pantheon
+		birth_date = 60.1.1
+		birth = nidaros
+		dynasty = civ_hardrada_dynasty
+		adm = 100 dip = 100 mil = 100
+		ruler_trait = bold_fighter
+		tag = NOR
+		timed_modifier = { # Immortality
+			modifier = "leader_immortal"
+			start_date = 1337.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+
+## ASIA
+
+	civ_genghis_khan = {
+		first_name = { name = Temujin }
+		nickname = { name = name_genghis }
+		culture = mongolian_culture
+		religion = pantheon
+		birth_date = 60.1.1
+		adm = 100 dip = 100 mil = 100
+		dynasty = civ_borjigin_dynasty
+		tag = MGE
+		timed_modifier = { # Immortality
+			modifier = "leader_immortal"
+			start_date = 1337.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+}

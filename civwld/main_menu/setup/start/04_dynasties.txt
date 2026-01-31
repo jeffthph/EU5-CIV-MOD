@@ -1,0 +1,25 @@
+dynasty_manager = {
+	default_dynasty = { name = { name = default_dynasty } home = vattnajokull }				#just for default coat of arms
+
+	
+	civ_canute_dynasty = {
+		name = { name = name_canute }
+		home = kobenhavn
+		dynasty_name_type = descendant
+	}
+	
+	civ_vasa_dynasty = {
+		name = { name = Vasa }
+		home = stockholm
+	}
+	
+	civ_hardrada_dynasty = {
+		name = { name = Hardrada }
+		home = nidaros
+	}
+
+	civ_borjigin_dynasty = {
+		name = { name = borjigin_dynasty }
+		home = karakorum
+	}
+}
